@@ -32,9 +32,9 @@ const Products = () => {
           {
             products.map((item) => (
                  <div className='card'>
-                <img src={item.image} alt="" key={item.id}/>
-                <h4>{item.title}</h4>
-                <h5>{item.price}</h5>
+                <img className='cardImage' src={item.image} alt="" key={item.id}/>
+                <h4 className='cardTitle'>{item.title}</h4>
+                <h5 className='cardPrice'>{item.price}$</h5>
                 <button className='btn' onClick={() => handleClick(item)}>add to cart</button>
             </div>
             ))
